@@ -1,0 +1,36 @@
+//utilidades
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos generales body*/
+body {
+    display: grid;
+    background: url('../img/backgroundmain.jpg');
+    background-size: cover;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    text-decoration: none;
+
+    a,
+    a:active {
+        text-decoration: none;
+        color: $color-tipografias;
+    }
+
+    a:link {
+        text-decoration: none;
+        text-transform: none;
+    }
+}
+
+/*fin estilos generales del body*/

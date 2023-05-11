@@ -1,0 +1,50 @@
+//utilidades
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+
+
+/*estilos app*/
+.div-main-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 3rem;
+
+
+
+
+}
+
+
+video {
+    height: 18rem;
+    width: 18rem;
+    margin: 0 auto;
+}
+
+
+/*estilos app para tablet*/
+
+
+@media screen and (min-width:600px) {
+    video {
+        height: 25rem;
+        width: 25rem;
+        margin: 0 auto
+    }
+}
+
+
+/*estilos app para desktop*/
+@media screen and (min-width:1024px) {
+    video {
+        height: 40rem;
+        width: 40rem;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+}

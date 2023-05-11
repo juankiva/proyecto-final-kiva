@@ -1,0 +1,39 @@
+//utilidades
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/*estilos generales del footer*/
+footer {
+  display: block;
+  background-color: #000;
+  grid-area: footer;
+  color: $color-tipografias;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+
+  a {
+    margin: 0.2rem;
+    text-decoration: none;
+
+    i {
+      margin: 0.5rem;
+    }
+  }
+
+  a :active {
+    text-decoration: none;
+  }
+}
+
+.linke {
+  color: #2a1f51;
+}
+
+.ig {
+  color: #511f44;
+}
+
+/*fin estilos generales del footer*/

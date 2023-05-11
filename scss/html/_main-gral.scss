@@ -1,0 +1,14 @@
+//utilidades
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/*estilos generales del main*/
+main {
+    grid-area: main;
+    min-height: 88vh;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*fin estilos generales del main*/

@@ -1,0 +1,76 @@
+//utilidades
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/*estilos de contacto*/
+.main-contacto {
+    min-height: 85vh;
+}
+
+.titulo-contacto {
+    @include titulo-plans-bthgrow-contact;
+}
+
+.form {
+    color: $color-tipografias;
+    background: $gradiente-principal;
+    width: 90%;
+    max-width: 25rem;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    margin: 0 auto 1rem;
+}
+
+.form-container {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-title {
+    font-family: inherit;
+    font-size: 2rem;
+    padding: .4rem;
+    text-align: center;
+    margin-bottom: .4em;
+
+}
+
+.form-input {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    padding: .8em 1em;
+    border: 2px solid $color-principal;
+}
+
+.form-cta {
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    width: fit-content;
+    background-color: $color-principal;
+    border: 5px solid $color-secundario;
+    border-radius: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    color: $color-tipografias;
+}
+
+/*estilos contacto desktop*/
+@media screen and (min-width:1024px) {
+
+    .titulo-contacto {
+        text-align: center;
+        color: $color-tipografias;
+        font-size: 4rem;
+        font-weight: bold;
+        font-family: 'Anton', sans-serif;
+    }
+
+}

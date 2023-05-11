@@ -1,0 +1,36 @@
+//utilidades
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+/* estilos bth loud */
+
+.titulo-bthgrow {
+    @include titulo-plans-bthgrow-contact;
+
+    /* estilos bth grow para tablet */
+    @media screen and (min-width:600px) {
+        font-size: 4rem;
+    }
+}
+
+.subtitulo-bthgrow {
+    font-family: 'Anton', sans-serif;
+    color: $color-tipografias;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2.7rem;
+    background-color: $color-principal;
+
+    /* estilos bth grow para tablet */
+    @media screen and (min-width:600px) {
+        font-size: 2rem;
+    }
+}
+
+.text-bthgrow {
+    color: $color-tipografias;
+    background-color: $color-secundario;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    margin: 2rem;
+}

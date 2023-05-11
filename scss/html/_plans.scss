@@ -1,0 +1,48 @@
+//utilidades
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/*estilos plans*/
+.titulo-planes {
+    @include titulo-plans-bthgrow-contact;
+}
+
+.styles-cards {
+    border: solid 0.5rem $color-secundario;
+
+    .ul-cards li {
+        color: #fff;
+        font-weight: bold;
+    }
+}
+
+.cards {
+    margin: 0.2rem;
+    height: 15rem;
+
+    .titulo-card {
+        font-weight: bold;
+        color: $color-tipografias;
+        text-align: center;
+    }
+}
+
+.cards {
+    background: $gradiente-principal;
+}
+
+/*estilos planes para desktop*/
+@media screen and (min-width:1024px) {
+    .titulo-planes {
+        text-align: center;
+        color: $color-tipografias;
+        font-size: 4rem;
+        font-weight: bold;
+        font-family: 'Anton', sans-serif;
+    }
+
+    .cards:hover {
+        transform: scale(1.2);
+    }
+}

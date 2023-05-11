@@ -1,0 +1,37 @@
+//utilidades
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/*estilos generales del header*/
+header {
+    background-color: #000;
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    a,
+    a:active {
+        text-decoration: none;
+        color: $color-tipografias;
+
+        &.active,
+        &:hover {
+            background-color: $color-principal;
+            transition: 1s;
+        }
+    }
+}
+
+
+.nav-text-styles {
+    color: $color-tipografias;
+    font-weight: bold;
+}
+
+/*fin estilos generales del header*/

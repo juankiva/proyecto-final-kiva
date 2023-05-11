@@ -1,0 +1,76 @@
+//utilidades
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/*estilos tools*/
+.div-main-tools {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  h1 {
+    @extend %font-titulos;
+    font-size: 3rem;
+    font-weight: bold;
+
+    /*estilos tools para tablet*/
+    @media screen and (min-width:600px) {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      text-align: center;
+      font-size: 4rem;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.tool-1,
+.tool-2,
+.tool-3,
+.tool-4 {
+  background-color: $color-secundario;
+  margin: 0.5rem;
+
+  h2 {
+    color: $color-tipografias;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+  }
+}
+
+.tool-1:hover,
+.tool-2:hover,
+.tool-3:hover,
+.tool-4:hover {
+  animation: zoom 1s ease-in-out;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.card-texto-tools {
+  @include estilos-card-texto;
+
+  p {
+    @include estilos-parrafo-card;
+  }
+}
+
+.card-content-tools {
+  padding: 10px;
+}

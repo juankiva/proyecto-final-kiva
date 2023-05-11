@@ -1,0 +1,66 @@
+//utilidades
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+@import "../utilidades/extend";
+
+/*estilos home*/
+.div-main-home {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: auto;
+  margin: 0 auto;
+  margin-top: 3rem;
+  justify-items: center;
+
+  /*estilos home para desktop*/
+  @media screen and (min-width: 1024px) {
+    h1 {
+      font-size: 6rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}
+
+.spotify {
+  margin-top: 2rem;
+}
+
+.titulo-home {
+  font-size: 4rem;
+  @extend %font-titulos;
+}
+
+.subtitulo-home {
+  font-size: 2rem;
+  @extend %font-titulos;
+}
+
+.button-main-home {
+  padding: 10px;
+  width: fit-content;
+  background-color: $color-principal;
+  border: 5px solid $color-secundario;
+  border-radius: 100px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.card-texto-home {
+  @include estilos-card-texto;
+
+  p {
+    @include estilos-parrafo-card;
+  }
+}
+
+.card-content-home {
+  padding: 10px;
+
+
+}

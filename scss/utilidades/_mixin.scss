@@ -1,0 +1,29 @@
+//titulo: plans-bthgrow-contactus
+@mixin titulo-plans-bthgrow-contact {
+    font-family: 'Anton', sans-serif;
+    color: $color-tipografias;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2.7rem;
+}
+
+@mixin estilos-card-texto {
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    margin-bottom: 10px;
+    background: $gradiente-principal;
+    color: #fff;
+}
+
+
+@mixin estilos-parrafo-card {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
